@@ -1,4 +1,4 @@
-# Blocky World Cup — Stadium Edition 2010
+# Blocky World Cup — Official Squads 2.6
 
 ## Lancer le jeu dans VS Code
 
@@ -16,22 +16,35 @@ Puis ouvrir **http://localhost:8000**.
 
 Le dossier peut être déposé tel quel sur Vercel ou placé à la racine d’un dépôt GitHub relié à Vercel. **index.html** doit rester à la racine et le dossier **assets** doit être conservé.
 
-## Commandes
+## Commandes PC — clavier français AZERTY
 
 - ZQSD, WASD ou flèches : déplacement
 - Maj : sprint
-- E : passe
-- Espace : tir chargé avec le ballon
-- Espace : récupération directe quand un adversaire proche possède le ballon
-- F : tacle classique
-- C : changer de joueur
+- J : passe
+- K : tir chargé avec le ballon
+- K : récupération directe quand un adversaire proche possède le ballon
+- L : tacle classique
+- I : changer de joueur
 - P ou Échap : pause
 
-Sur PC, une barre colorée récapitule les commandes dans le menu et une aide compacte reste visible pendant le match. Les boutons tactiles apparaissent automatiquement sur téléphone et tablette.
+Cette disposition sépare clairement les deux mains : **ZQSD à gauche pour courir** et **IJKL à droite pour les actions**. Les anciennes touches E, Espace, F et C restent acceptées comme commandes secondaires. Sur PC, la fiche des touches n'est plus posée en permanence sur le terrain : le bouton **⌨** ouvre une aide centrale en mettant automatiquement le match en pause. La fermeture de la fiche relance le match. Les boutons tactiles apparaissent automatiquement sur téléphone et tablette.
 
 ## Direction artistique
 
-La version **Bilingual Fun Cup 2.3** adopte une ambiance de Coupe du monde destinée à un jeune joueur : couleurs lumineuses, confettis, cartes d’équipes claires, contrastes renforcés et références graphiques aux jeux de football rétro sans assombrir l’interface.
+La version **Official Squads 2.6** adopte une ambiance de Coupe du monde destinée à un jeune joueur : couleurs lumineuses, confettis, cartes d’équipes claires, contrastes renforcés et références graphiques aux jeux de football rétro sans assombrir l’interface.
+
+## Équipes officielles 2026
+
+Le jeu contient les **48 sélections de la Coupe du monde 2026**, avec leur drapeau dans le sélecteur et quatre joueurs visibles dans la carte d'équipe puis sur le terrain :
+
+- **GK** : gardien / goalkeeper
+- **DF** : défenseur / defender
+- **MF** : milieu / midfielder
+- **FW** : attaquant / forward
+
+Le match se joue maintenant en **4 contre 4** : ces quatre joueurs sont donc les quatre personnages réellement utilisés par chaque équipe. Tous les joueurs d'une sélection viennent de la même liste finale 2026 et sont contemporains.
+
+Sources de référence : [page officielle des équipes FIFA 2026](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/teams) et [listes finales officielles des joueurs FIFA](https://fdp.fifa.org/assetspublic/ce281/pdf/SquadLists-English.pdf).
 
 ## Modes de jeu
 
@@ -40,6 +53,8 @@ La version **Bilingual Fun Cup 2.3** adopte une ambiance de Coupe du monde desti
 - **Entraînement** : séance de cinq minutes en difficulté Découverte pour travailler les passes, les tirs, la récupération et les tacles.
 
 Les sélecteurs d’équipes utilisent une liste personnalisée avec le drapeau de chaque pays. Un nouveau favicon coloré représentant une coupe et un ballon est fourni directement à la racine du projet.
+
+À la fin du match, les statistiques distinguent désormais les **tirs**, les **tirs cadrés** et les **tirs non cadrés**, en plus des passes, des tacles réussis et de la possession.
 
 ## Français et anglais
 
