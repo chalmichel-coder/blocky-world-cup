@@ -1,4 +1,4 @@
-# Blocky World Cup — Supporters Edition 2.7
+# Blocky World Cup — Complete Edition 3.0
 
 ## Lancer le jeu dans VS Code
 
@@ -31,7 +31,7 @@ Cette disposition sépare clairement les deux mains : **ZQSD à gauche pour cour
 
 ## Direction artistique
 
-La version **Supporters Edition 2.7** adopte une ambiance de Coupe du monde destinée à un jeune joueur : couleurs lumineuses, confettis, cartes d’équipes claires, contrastes renforcés et références graphiques aux jeux de football rétro sans assombrir l’interface. Pendant le match, les supporters déploient deux grands drapeaux animés correspondant exactement aux équipes présentes sur le terrain.
+La version **Complete Edition 3.0** est reconstruite à partir de la dernière base complète 2.7, puis enrichie de la cinématique et du nouveau système audio. Elle adopte une ambiance de Coupe du monde destinée à un jeune joueur : couleurs lumineuses, confettis, cartes d’équipes claires, contrastes renforcés et références graphiques aux jeux de football rétro sans assombrir l’interface. Pendant le match, les supporters déploient deux grands drapeaux animés correspondant exactement aux équipes présentes sur le terrain.
 
 ## Équipes officielles 2026
 
@@ -82,7 +82,11 @@ Les quatre affichages utilisent exactement le même moteur de match, les mêmes 
 
 Les deux photographies de l’écran d’ouverture sont normalement dans **assets**. Le jeu accepte aussi automatiquement les copies placées à la racine du dépôt GitHub. Les drapeaux détaillés sont chargés depuis FlagCDN ; un code pays reste visible si la connexion n’est pas disponible.
 
-La musique **assets/opening-theme.m4a** démarre après le premier clic ou l’appui sur Entrée, conformément aux règles des navigateurs. Elle reste active dans le menu et s’arrête progressivement au lancement du match.
+La cinématique **intro-haaland-vozinha.mp4** est lue avant la jaquette, avec une image d’attente locale, une barre de progression et les boutons bilingues **Démarrer avec le son / Start with sound** et **Passer l’intro / Skip intro**. Le clic initial est volontaire : Chrome, Safari et les navigateurs mobiles interdisent le démarrage automatique d’une vidéo sonore sans action du visiteur. Ce bouton garantit donc que l’image et le son commencent ensemble. La touche Échap permet de passer la vidéo.
+
+La nouvelle musique **opening-theme.m4a** est préparée lors du clic de lancement, puis commence sur la jaquette après la cinématique. Elle reste active dans le menu et s’arrête progressivement au lancement du match. Son adresse contient un numéro de version afin d'empêcher le navigateur de rejouer l'ancienne musique conservée en cache.
+
+Les cinq médias essentiels sont volontairement placés à la racine du projet pour simplifier un téléversement manuel sur GitHub : **intro-haaland-vozinha.mp4**, **intro-haaland-vozinha-poster.jpg**, **opening-theme.m4a**, **haaland.jpg** et **vozinha.jpg**. Une seconde copie reste dans **assets** comme solution de secours.
 
 Pendant le match, le jeu produit sa propre bande-son sportive électronique : batterie rapide, basse, synthés et ambiance de tribunes. Cette musique est désormais pré-calculée puis jouée comme une seule boucle légère, afin d’éviter l’accumulation d’objets audio. Le bouton Son du menu ou du match coupe simultanément la musique et les bruitages.
 
