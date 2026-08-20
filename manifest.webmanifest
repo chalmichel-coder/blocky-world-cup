@@ -1,7 +1,7 @@
 {
-  "name": "Blocky World Cup — Fun Cup Edition",
+  "name": "Blocky World Cup — Bilingual Fun Cup",
   "short_name": "Blocky Cup",
-  "description": "Jeu de football à cinq dans un stade cubique international.",
+  "description": "Jeu de football bilingue français-anglais / French-English arcade football game.",
   "start_url": "./index.html",
   "display": "fullscreen",
   "background_color": "#2458df",
