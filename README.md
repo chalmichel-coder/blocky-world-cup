@@ -1,4 +1,4 @@
-# Blocky World Cup — Supporters Edition 2.7
+# Blocky World Cup — Official Squads 2.6
 
 ## Lancer le jeu dans VS Code
 
@@ -31,20 +31,20 @@ Cette disposition sépare clairement les deux mains : **ZQSD à gauche pour cour
 
 ## Direction artistique
 
-La version **Supporters Edition 2.7** adopte une ambiance de Coupe du monde destinée à un jeune joueur : couleurs lumineuses, confettis, cartes d’équipes claires, contrastes renforcés et références graphiques aux jeux de football rétro sans assombrir l’interface. Pendant le match, les supporters déploient deux grands drapeaux animés correspondant exactement aux équipes présentes sur le terrain.
+La version **Official Squads 2.6** adopte une ambiance de Coupe du monde destinée à un jeune joueur : couleurs lumineuses, confettis, cartes d’équipes claires, contrastes renforcés et références graphiques aux jeux de football rétro sans assombrir l’interface.
 
 ## Équipes officielles 2026
 
-Le jeu contient les **48 sélections de la Coupe du monde 2026**, auxquelles s'ajoute le **Cambodge en équipe bonus**, soit **49 pays au total**. Chaque pays possède son drapeau dans le sélecteur et quatre joueurs visibles dans la carte d'équipe puis sur le terrain :
+Le jeu contient les **48 sélections de la Coupe du monde 2026**, avec leur drapeau dans le sélecteur et quatre joueurs visibles dans la carte d'équipe puis sur le terrain :
 
 - **GK** : gardien / goalkeeper
 - **DF** : défenseur / defender
 - **MF** : milieu / midfielder
 - **FW** : attaquant / forward
 
-Le match se joue maintenant en **4 contre 4** : ces quatre joueurs sont donc les quatre personnages réellement utilisés par chaque équipe. Tous les joueurs d'une sélection viennent de la même liste finale 2026 et sont contemporains. Pour le Cambodge, les quatre joueurs retenus ont été alignés ensemble en sélection : Keo Soksela, Takaki Ose, Yudai Ogawa et Sieng Chanthea.
+Le match se joue maintenant en **4 contre 4** : ces quatre joueurs sont donc les quatre personnages réellement utilisés par chaque équipe. Tous les joueurs d'une sélection viennent de la même liste finale 2026 et sont contemporains.
 
-Sources de référence : [page officielle des équipes FIFA 2026](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/teams), [listes finales officielles des joueurs FIFA](https://fdp.fifa.org/assetspublic/ce281/pdf/SquadLists-English.pdf) et [composition du Cambodge face au Vietnam en mars 2025](https://www.sportsmole.co.uk/football/lineups/vietnam-vs-cambodia_game_19385806_sl.html).
+Sources de référence : [page officielle des équipes FIFA 2026](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/teams) et [listes finales officielles des joueurs FIFA](https://fdp.fifa.org/assetspublic/ce281/pdf/SquadLists-English.pdf).
 
 ## Modes de jeu
 

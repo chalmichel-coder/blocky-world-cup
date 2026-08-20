@@ -1,6 +1,6 @@
 "use strict";
 
-// Les 48 sélections FIFA 2026, plus le Cambodge en équipe bonus.
+// Les 48 sélections et les joueurs proviennent des listes finales officielles FIFA 2026.
 // Chaque mini-équipe réunit quatre internationaux contemporains : GK, DF, MF et FW.
 window.BWC_TEAM_DATA={
 countries:{
@@ -11,7 +11,6 @@ countries:{
 "Belgique":["🇧🇪","#e30613","#111","#e30613","#f0cb24"],
 "Bosnie-Herzégovine":["🇧🇦","#174a9c","#ffdf00","#174a9c","#fff"],
 "Brésil":["🇧🇷","#ffcc00","#2146a8","#fff","#16834b"],
-"Cambodge":["🇰🇭","#1642a3","#d72632","#1642a3","#fff"],
 "Cap-Vert":["🇨🇻","#174ea6","#fff","#d82c3a","#f6cf3d"],
 "Canada":["🇨🇦","#e01d2f","#fff","#e01d2f","#fff"],
 "Colombie":["🇨🇴","#fcd116","#173b8e","#ce1126","#ce1126"],
@@ -55,10 +54,10 @@ countries:{
 "Ouzbékistan":["🇺🇿","#1687ce","#fff","#1687ce","#1b9855"]
 },
 countryCodes:{
-"Algérie":"dz","Argentine":"ar","Australie":"au","Autriche":"at","Belgique":"be","Bosnie-Herzégovine":"ba","Brésil":"br","Cambodge":"kh","Cap-Vert":"cv","Canada":"ca","Colombie":"co","RD Congo":"cd","Côte d'Ivoire":"ci","Croatie":"hr","Curaçao":"cw","Tchéquie":"cz","Équateur":"ec","Égypte":"eg","Angleterre":"gb-eng","France":"fr","Allemagne":"de","Ghana":"gh","Haïti":"ht","Iran":"ir","Irak":"iq","Japon":"jp","Jordanie":"jo","Corée du Sud":"kr","Mexique":"mx","Maroc":"ma","Pays-Bas":"nl","Nouvelle-Zélande":"nz","Norvège":"no","Panama":"pa","Paraguay":"py","Portugal":"pt","Qatar":"qa","Arabie saoudite":"sa","Écosse":"gb-sct","Sénégal":"sn","Afrique du Sud":"za","Espagne":"es","Suède":"se","Suisse":"ch","Tunisie":"tn","Turquie":"tr","Uruguay":"uy","États-Unis":"us","Ouzbékistan":"uz"
+"Algérie":"dz","Argentine":"ar","Australie":"au","Autriche":"at","Belgique":"be","Bosnie-Herzégovine":"ba","Brésil":"br","Cap-Vert":"cv","Canada":"ca","Colombie":"co","RD Congo":"cd","Côte d'Ivoire":"ci","Croatie":"hr","Curaçao":"cw","Tchéquie":"cz","Équateur":"ec","Égypte":"eg","Angleterre":"gb-eng","France":"fr","Allemagne":"de","Ghana":"gh","Haïti":"ht","Iran":"ir","Irak":"iq","Japon":"jp","Jordanie":"jo","Corée du Sud":"kr","Mexique":"mx","Maroc":"ma","Pays-Bas":"nl","Nouvelle-Zélande":"nz","Norvège":"no","Panama":"pa","Paraguay":"py","Portugal":"pt","Qatar":"qa","Arabie saoudite":"sa","Écosse":"gb-sct","Sénégal":"sn","Afrique du Sud":"za","Espagne":"es","Suède":"se","Suisse":"ch","Tunisie":"tn","Turquie":"tr","Uruguay":"uy","États-Unis":"us","Ouzbékistan":"uz"
 },
 countryEnglish:{
-"Algérie":"Algeria","Argentine":"Argentina","Australie":"Australia","Autriche":"Austria","Belgique":"Belgium","Bosnie-Herzégovine":"Bosnia and Herzegovina","Brésil":"Brazil","Cambodge":"Cambodia","Cap-Vert":"Cape Verde","Canada":"Canada","Colombie":"Colombia","RD Congo":"DR Congo","Côte d'Ivoire":"Ivory Coast","Croatie":"Croatia","Curaçao":"Curaçao","Tchéquie":"Czechia","Équateur":"Ecuador","Égypte":"Egypt","Angleterre":"England","France":"France","Allemagne":"Germany","Ghana":"Ghana","Haïti":"Haiti","Iran":"Iran","Irak":"Iraq","Japon":"Japan","Jordanie":"Jordan","Corée du Sud":"South Korea","Mexique":"Mexico","Maroc":"Morocco","Pays-Bas":"Netherlands","Nouvelle-Zélande":"New Zealand","Norvège":"Norway","Panama":"Panama","Paraguay":"Paraguay","Portugal":"Portugal","Qatar":"Qatar","Arabie saoudite":"Saudi Arabia","Écosse":"Scotland","Sénégal":"Senegal","Afrique du Sud":"South Africa","Espagne":"Spain","Suède":"Sweden","Suisse":"Switzerland","Tunisie":"Tunisia","Turquie":"Türkiye","Uruguay":"Uruguay","États-Unis":"United States","Ouzbékistan":"Uzbekistan"
+"Algérie":"Algeria","Argentine":"Argentina","Australie":"Australia","Autriche":"Austria","Belgique":"Belgium","Bosnie-Herzégovine":"Bosnia and Herzegovina","Brésil":"Brazil","Cap-Vert":"Cape Verde","Canada":"Canada","Colombie":"Colombia","RD Congo":"DR Congo","Côte d'Ivoire":"Ivory Coast","Croatie":"Croatia","Curaçao":"Curaçao","Tchéquie":"Czechia","Équateur":"Ecuador","Égypte":"Egypt","Angleterre":"England","France":"France","Allemagne":"Germany","Ghana":"Ghana","Haïti":"Haiti","Iran":"Iran","Irak":"Iraq","Japon":"Japan","Jordanie":"Jordan","Corée du Sud":"South Korea","Mexique":"Mexico","Maroc":"Morocco","Pays-Bas":"Netherlands","Nouvelle-Zélande":"New Zealand","Norvège":"Norway","Panama":"Panama","Paraguay":"Paraguay","Portugal":"Portugal","Qatar":"Qatar","Arabie saoudite":"Saudi Arabia","Écosse":"Scotland","Sénégal":"Senegal","Afrique du Sud":"South Africa","Espagne":"Spain","Suède":"Sweden","Suisse":"Switzerland","Tunisie":"Tunisia","Turquie":"Türkiye","Uruguay":"Uruguay","États-Unis":"United States","Ouzbékistan":"Uzbekistan"
 },
 nationalPlayers:{
 "Algérie":{GK:"Luca Zidane",DF:"Aïssa Mandi",MF:"Nabil Bentaleb",FW:"Riyad Mahrez"},
@@ -68,7 +67,6 @@ nationalPlayers:{
 "Belgique":{GK:"Thibaut Courtois",DF:"Thomas Meunier",MF:"Axel Witsel",FW:"Romelu Lukaku"},
 "Bosnie-Herzégovine":{GK:"Nikola Vasilj",DF:"Sead Kolašinac",MF:"Amir Hadžiahmetović",FW:"Edin Džeko"},
 "Brésil":{GK:"Alisson",DF:"Marquinhos",MF:"Casemiro",FW:"Neymar Jr"},
-"Cambodge":{GK:"Keo Soksela",DF:"Takaki Ose",MF:"Yudai Ogawa",FW:"Sieng Chanthea"},
 "Cap-Vert":{GK:"Vozinha",DF:"Stopira",MF:"Garry Rodrigues",FW:"Ryan Mendes"},
 "Canada":{GK:"Maxime Crépeau",DF:"Richie Laryea",MF:"Jonathan Osorio",FW:"Jonathan David"},
 "Colombie":{GK:"David Ospina",DF:"Davinson Sánchez",MF:"James Rodríguez",FW:"Luis Díaz"},
