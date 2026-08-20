@@ -1,15 +1,15 @@
 {
-  "name": "Blocky World Cup — Stadium Edition",
+  "name": "Blocky World Cup — Fun Cup Edition",
   "short_name": "Blocky Cup",
   "description": "Jeu de football à cinq dans un stade cubique international.",
   "start_url": "./index.html",
   "display": "fullscreen",
-  "background_color": "#06131d",
-  "theme_color": "#075286",
+  "background_color": "#2458df",
+  "theme_color": "#08aee2",
   "orientation": "landscape",
   "icons": [
     {
-      "src": "assets/favicon.svg",
+      "src": "favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
