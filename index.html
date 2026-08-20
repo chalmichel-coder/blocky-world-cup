@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name="theme-color" content="#07131c">
-<meta name="bwc-version" content="2.0-adaptive">
+<meta name="bwc-version" content="2.1-fun-cup">
 <title>Blocky World Cup — Adaptive Arcade Edition</title>
 <link rel="icon" href="assets/favicon.svg" data-fallback="favicon.svg" type="image/svg+xml">
 <link rel="manifest" href="manifest.webmanifest">
@@ -77,6 +77,34 @@ h1{font-size:clamp(30px,5vw,64px);line-height:.94;letter-spacing:-.055em;text-tr
 @media(max-width:800px){body{padding:0}#game{width:100vw;max-height:100vh;border:0;border-radius:0}.console-top{height:49px;padding:0 13px}.mode-tabs,.profile,.menu-heading p{display:none}.mini-logo{font-size:17px}.menu-content{padding:8px 12px}.menu-heading{margin-bottom:5px}.menu-heading h2{font-size:19px}.match-select{grid-template-columns:1fr 34px 1fr;gap:5px}.versus{font-size:16px}.team-panel{padding:11px 7px 7px}.flag-stage{height:60px}.flag-box{width:74px;border-width:2px}.team-title{font-size:13px}.team-panel select{padding:6px 4px;font-size:9px}.settings-bar{grid-template-columns:1fr 1fr auto;gap:5px;margin-top:6px}.setting{padding:5px}.menu-play{min-width:115px;padding:7px 8px;min-height:38px;font-size:9px}.console-help{height:25px;padding:0 10px;gap:8px;font-size:7px}.pad-key{min-width:15px;height:15px}.score{min-width:73vw;height:37px;grid-template-columns:1fr 34px 8px 34px 1fr 54px;font-size:8px}.num{height:24px;font-size:16px}.hud-flag{width:20px;height:13px}#clock{padding:6px}.icon{width:30px;height:30px;font-size:11px}.cover-photo{width:68%}.cover-logo h1{font-size:44px}.cover-player{bottom:18%;padding:5px 7px}.press-start{bottom:6%;padding:8px 13px}.legal-note{display:none}}
 @media(pointer:coarse){#touch.active{display:flex}#energy{left:50%;bottom:8px;width:120px;transform:translateX(-50%)}#actionTip{display:none!important}}
 
+/* THÈME COUPE DU MONDE JUNIOR — coloré, joyeux et rétro */
+body{background:radial-gradient(circle at 15% 10%,#34d6ff 0,transparent 28%),radial-gradient(circle at 85% 12%,#ffd84d 0,transparent 24%),linear-gradient(145deg,#074acb,#5f2bd6 60%,#ef3f87)}
+#game{border:3px solid #ffe45b;border-radius:18px;background:#1554d1;box-shadow:0 24px 70px #07134b99,0 0 0 5px #ffffff40,inset 0 1px #fff8}
+#menu{isolation:isolate;overflow:hidden;background:linear-gradient(135deg,#17bdf5 0%,#4169e1 48%,#8f3ee8 100%);backdrop-filter:none}
+#menu:before{content:"";position:absolute;inset:0;z-index:-2;opacity:.95;background:radial-gradient(circle at 5% 18%,#ffe55b 0 6px,transparent 7px),radial-gradient(circle at 16% 74%,#ff5d8f 0 8px,transparent 9px),radial-gradient(circle at 29% 11%,#fff 0 4px,transparent 5px),radial-gradient(circle at 74% 14%,#55f29b 0 7px,transparent 8px),radial-gradient(circle at 88% 72%,#ffd84d 0 9px,transparent 10px),radial-gradient(circle at 96% 25%,#ff6f61 0 5px,transparent 6px),linear-gradient(25deg,transparent 48%,#ffffff12 49% 51%,transparent 52%)}
+#menu:after{content:"";position:absolute;z-index:-1;left:50%;bottom:-68%;width:115%;aspect-ratio:1;border:3px solid #ffffff25;border-radius:50%;transform:translateX(-50%);box-shadow:0 0 0 36px #ffffff0b,0 0 0 72px #ffffff08}
+.console-menu{position:relative;z-index:1;overflow:hidden;border-radius:14px;background:#ffffff10}
+.console-top{height:78px;padding:0 30px;border-bottom:4px solid #ffe455;background:linear-gradient(105deg,#133bbb,#087ee1 55%,#05b8c8);box-shadow:0 8px 28px #1b187253}
+.mini-logo{color:#fff;text-shadow:0 3px #172b8c,0 6px 15px #00186688}.mini-logo span{color:#ffe44d;text-shadow:0 3px #f24f72}
+.mode-tabs{gap:8px;margin-left:38px;padding:10px 0}.mode-tab{margin:0;padding:0 20px;border:1px solid #ffffff45;border-radius:14px;color:#eafcff;background:#ffffff14}.mode-tab.active{color:#142966;border:2px solid #fff2a6;border-bottom:2px solid #fff2a6;background:linear-gradient(#ffe66a,#ffc83d);box-shadow:0 5px 0 #eb8e28,0 8px 18px #1733a75c}
+.profile{color:#fff}.device-badge{border:2px solid #fff;color:#13377b;background:#ffe558;box-shadow:0 3px #e89727}.menu-sound{border:2px solid #fff;border-radius:12px;color:#153274;background:#fff;box-shadow:0 4px #c8e7ff;font-size:10px}
+.menu-content{position:relative;padding:17px clamp(24px,4.5vw,64px) 13px;color:#0d2c63;background:linear-gradient(180deg,#effcffed,#fff9edf5)}
+.menu-content:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.25;background:linear-gradient(90deg,transparent 49.8%,#1d73e0 50%,transparent 50.2%),radial-gradient(circle at 50% 50%,transparent 0 54px,#1d73e0 55px 57px,transparent 58px)}
+.menu-heading{position:relative;z-index:1;margin-bottom:10px}.menu-heading h2{color:#123374;font-weight:900;letter-spacing:-.045em;text-shadow:0 3px #fff}.menu-heading p{color:#7251c7;font-weight:900}.cup-kicker{display:inline-flex;margin-bottom:4px;padding:4px 9px;border-radius:999px;color:#173270;background:#ffe25b;box-shadow:0 3px #f2a72b;font-size:8px;font-weight:1000;letter-spacing:.16em;text-transform:uppercase}
+.match-select,.settings-bar{position:relative;z-index:1}.team-panel{border:3px solid #fff;border-radius:19px;color:#102e65;background:linear-gradient(145deg,#fff,#eaf9ff);box-shadow:0 10px 0 #2455b9,0 17px 32px #16348735,inset 0 1px #fff;transform:translateY(0);transition:.2s}.team-panel:hover{transform:translateY(-3px)}
+.team-panel:first-child{border-color:#b4f4ff;background:linear-gradient(145deg,#fff,#dff9ff)}.team-panel:last-child{border-color:#ffd0df;background:linear-gradient(145deg,#fff,#fff0f4);box-shadow:0 10px 0 #bb3f82,0 17px 32px #7b185230}
+.team-panel:after{opacity:.55;background:linear-gradient(125deg,transparent 55%,#44d9ff20 55% 68%,transparent 68%)}
+.side-label{top:10px;left:10px;border-radius:999px;padding:7px 14px;color:#fff;background:linear-gradient(90deg,#087bdd,#00b9d8);box-shadow:0 4px #0752a2;font-size:9px}.team-panel:last-child .side-label{background:linear-gradient(90deg,#f04482,#ff713f);box-shadow:0 4px #b62166}
+.flag-stage:before{width:220px;height:125px;background:radial-gradient(ellipse,#5ee4ff80,transparent 68%)}.team-panel:last-child .flag-stage:before{background:radial-gradient(ellipse,#ff78aa6b,transparent 68%)}
+.flag-box{border:5px solid #fff;border-radius:13px;background:#d7efff;box-shadow:0 9px 0 #b9dce9,0 15px 24px #173c7850}.flag-code{color:#173270;text-shadow:0 2px #fff}.team-title{color:#173270;font-weight:900;letter-spacing:.015em}
+.team-panel select{border:2px solid #71cceb;border-radius:12px;color:#14336b;background:#fff;box-shadow:inset 0 -3px #dff2fa;font-weight:900}.team-panel:last-child select{border-color:#ff9abe;box-shadow:inset 0 -3px #ffe3ec}
+.versus{font-style:normal;text-shadow:none}.versus span{display:grid;place-items:center;width:70px;height:70px;padding:0;border:5px solid #fff;border-radius:50%;color:#fff;background:linear-gradient(145deg,#f5418a,#7a35da);box-shadow:0 8px 0 #4f2aa6,0 13px 25px #4c279b4d;font-size:25px;font-weight:1000;transform:rotate(-7deg)}
+.setting{border:2px solid #c9e7f5;border-radius:13px;background:#fff;box-shadow:0 5px 0 #b8d8ea}.setting label{color:#3862b5;font-size:9px}.setting select{color:#173270;background:#edf8ff;font-weight:900}
+.menu-play{border:3px solid #fff6ac;border-radius:14px;color:#40245e;background:linear-gradient(135deg,#ffe34e,#ffb830 58%,#ff6d64);box-shadow:inset 0 2px #fff9,0 7px #e65347,0 13px 28px #e7566252;font-size:14px}.menu-play:hover{filter:saturate(1.12) brightness(1.05)}
+.console-help{height:62px;justify-content:center;gap:10px;padding:7px 18px;border-top:4px solid #ffe455;color:#173270;background:linear-gradient(90deg,#fff,#eaf9ff);font-size:9px}.help-title{padding:8px 12px;border-radius:10px;color:#fff;background:linear-gradient(135deg,#174fd0,#813fe2);box-shadow:0 4px #34279c;font-size:10px;letter-spacing:.08em}.help-item{display:flex;align-items:center;gap:6px;padding:5px 8px;border:2px solid #d1eaf5;border-radius:11px;background:#fff;box-shadow:0 4px #bdd8e5;white-space:nowrap}.help-item em{font-style:normal;font-weight:1000}.pad-key{min-width:29px;height:29px;margin:0;padding:0 7px;border:2px solid #fff;border-radius:8px;color:#fff;background:linear-gradient(#1cbde1,#1575d6);box-shadow:0 4px #0c4c9f;font-size:9px}.help-item:nth-child(3) .pad-key{background:linear-gradient(#59d66f,#1aa360);box-shadow:0 4px #087c45}.help-item:nth-child(4) .pad-key{background:linear-gradient(#ffce42,#f49327);box-shadow:0 4px #c65f20}.help-item:nth-child(5) .pad-key{background:linear-gradient(#ff6d87,#e63474);box-shadow:0 4px #a91d59}.help-item:nth-child(6) .pad-key{background:linear-gradient(#9d63ee,#6b36c8);box-shadow:0 4px #452098}
+#pcControls{position:absolute;z-index:15;top:82px;left:13px;display:none;width:225px;grid-template-columns:1fr 1fr;gap:5px;padding:9px;border:2px solid #fff6a3;border-radius:13px;color:#12316a;background:#fffffff2;box-shadow:0 7px 0 #e4a52b,0 14px 26px #001b5366;font-size:8px;font-weight:900;text-transform:uppercase;pointer-events:none}
+#pcControls .pc-title{grid-column:1/-1;color:#fff;background:linear-gradient(90deg,#1755d1,#7e3cdd);margin:-9px -9px 3px;padding:7px 9px;border-radius:10px 10px 0 0;letter-spacing:.1em}#pcControls span{display:flex;align-items:center;gap:5px}#pcControls kbd{display:grid;place-items:center;min-width:30px;height:24px;padding:0 5px;border:2px solid #fff;border-radius:6px;color:#fff;background:#0caada;box-shadow:0 3px #086aab;font:900 8px "Segoe UI"}#game[data-device="desktop"].playing #pcControls{display:grid}
+
 /* PROFILS PC / TABLETTE / MOBILE — même moteur, interface adaptée */
 #game.playing:after{content:"";position:absolute;inset:0;z-index:11;pointer-events:none;opacity:.075;background:repeating-linear-gradient(0deg,#fff0 0 3px,#00131f88 4px);mix-blend-mode:multiply}
 .device-badge{display:inline-flex;align-items:center;margin-right:9px;padding:4px 7px;border:1px solid #55ccff79;color:#dff7ff;background:#061924;font-size:8px;letter-spacing:.12em}
@@ -92,7 +120,7 @@ h1{font-size:clamp(30px,5vw,64px);line-height:.94;letter-spacing:-.055em;text-tr
 @media(orientation:landscape) and (pointer:coarse){
   body{padding:0;background:#01060a}#game{width:100vw;height:100dvh;max-height:none;aspect-ratio:auto;border:0;border-radius:0}
   #touch{padding:0 max(14px,env(safe-area-inset-right)) max(10px,env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left))}
-  .console-top{padding-left:max(13px,env(safe-area-inset-left));padding-right:max(13px,env(safe-area-inset-right))}
+  .console-top{height:52px;padding-left:max(13px,env(safe-area-inset-left));padding-right:max(13px,env(safe-area-inset-right))}.console-help{display:none}.menu-content{padding-top:7px;padding-bottom:7px}.cup-kicker{display:none}
 }
 
 @media(orientation:portrait) and (max-width:700px){
@@ -128,7 +156,7 @@ h1{font-size:clamp(30px,5vw,64px);line-height:.94;letter-spacing:-.055em;text-tr
   <img class="cover-photo haaland" src="haaland.jpg" onerror="this.onerror=null;this.src='assets/haaland.jpg'" alt="Erling Haaland avec la Norvège">
   <img class="cover-photo vozinha" src="vozinha.jpg" onerror="this.onerror=null;this.src='assets/vozinha.jpg'" alt="Vozinha avec le Cap-Vert">
   <div class="cover-shade"></div><div class="cover-cut"></div>
-  <div class="cover-logo"><div class="cover-badge">Arcade Edition · V2 Adaptive</div><h1><span>Blocky</span><em>World Cup</em></h1><div class="cover-edition">Football rétro nouvelle génération</div></div>
+  <div class="cover-logo"><div class="cover-badge">Fun Cup Edition · V2.1</div><h1><span>Blocky</span><em>World Cup</em></h1><div class="cover-edition">Football rétro nouvelle génération</div></div>
   <div class="cover-player left"><strong>Erling Haaland</strong><small>Norvège · Attaquant</small></div>
   <div class="cover-player right"><strong>Vozinha</strong><small>Cap-Vert · Gardien</small></div>
   <div id="pressStart" class="press-start">Appuie sur Entrée ou touche l’écran</div>
@@ -139,7 +167,7 @@ h1{font-size:clamp(30px,5vw,64px);line-height:.94;letter-spacing:-.055em;text-tr
   <div class="console-menu">
     <header class="console-top"><div class="mini-logo">Blocky <span>World Cup</span></div><nav class="mode-tabs"><div class="mode-tab active">Match rapide</div><div class="mode-tab">Coupe mondiale</div><div class="mode-tab">Entraînement</div></nav><div class="profile"><span id="deviceBadge" class="device-badge">PC</span>Profil joueur · Niv. 10</div><button id="menuSound" class="menu-sound">🔊 Son</button></header>
     <div class="menu-content">
-      <div class="menu-heading"><h2>Choix des équipes</h2><p>Prépare ton match international</p></div>
+      <div class="menu-heading"><div><span class="cup-kicker">🌍 En route vers la Coupe</span><h2>Choisis tes équipes !</h2></div><p>Prépare ton grand match international</p></div>
       <div class="match-select">
         <article class="team-panel"><div class="side-label">Domicile · Joueur 1</div><div class="flag-stage"><div class="flag-box"><span id="homeCode" class="flag-code">FRA</span><img id="homeFlag" alt="Drapeau de l'équipe choisie"></div></div><div id="homeTitle" class="team-title">France</div><select id="homeSelect" aria-label="Choisir ton équipe"></select></article>
         <div class="versus"><span>VS</span></div>
@@ -147,11 +175,12 @@ h1{font-size:clamp(30px,5vw,64px);line-height:.94;letter-spacing:-.055em;text-tr
       </div>
       <div class="settings-bar"><div class="setting"><label>Difficulté</label><select id="difficulty"><option value="easy">Découverte</option><option value="medium" selected>International</option><option value="hard">Légende</option></select></div><div class="setting"><label>Durée du match</label><select id="duration"><option value="120">2 minutes</option><option value="180" selected>3 minutes</option><option value="300">5 minutes</option></select></div><button id="play" class="btn menu-play"><span>Lancer le match</span></button></div>
     </div>
-    <footer class="console-help"><span><b class="pad-key">↵</b>Valider</span><span><b class="pad-key">E</b>Passe</span><span><b class="pad-key">␣</b>Tir / récupérer</span><span><b class="pad-key">F</b>Tacle</span><span><b class="pad-key">C</b>Changer</span><span><b class="pad-key">⇧</b>Sprint</span></footer>
+    <footer class="console-help"><strong class="help-title">⌨ COMMANDES PC</strong><span class="help-item"><b class="pad-key">ZQSD</b><em>Bouger</em></span><span class="help-item"><b class="pad-key">E</b><em>Passe</em></span><span class="help-item"><b class="pad-key">ESPACE</b><em>Tir / ballon</em></span><span class="help-item"><b class="pad-key">F</b><em>Tacle</em></span><span class="help-item"><b class="pad-key">C</b><em>Changer</em></span><span class="help-item"><b class="pad-key">MAJ</b><em>Sprint</em></span></footer>
   </div>
 </section>
 <div id="hud"><div class="score"><span class="name"><img id="hf" class="hud-flag" alt=""><span id="hn">France</span></span><span id="hs" class="num">0</span><span class="dash">–</span><span id="as" class="num">0</span><span class="name away"><span id="an">Brésil</span><img id="af" class="hud-flag" alt=""></span><span id="clock">03:00</span></div><div id="phase">Match à 5 · International</div></div>
 <div id="tools"><button id="sound" class="icon" title="Son">🔊</button><button id="full" class="icon" title="Plein écran">⛶</button><button id="pauseBtn" class="icon" title="Pause">Ⅱ</button></div>
+<div id="pcControls"><div class="pc-title">⌨ Commandes pendant le match</div><span><kbd>ZQSD</kbd>Bouger</span><span><kbd>E</kbd>Passe</span><span><kbd>ESPACE</kbd>Tir / ballon</span><span><kbd>F</kbd>Tacle</span><span><kbd>C</kbd>Changer</span><span><kbd>MAJ</kbd>Sprint</span></div>
 <div id="banner">Coup d’envoi</div>
 <div id="actionTip">Espace : récupérer le ballon</div>
 <div id="energy"><div class="mlabel"><span>Énergie</span><span id="number">N° 10</span></div><div class="meter"><div id="energyFill" class="fill"></div></div></div>
