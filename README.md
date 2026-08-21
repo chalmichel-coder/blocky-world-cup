@@ -1,4 +1,4 @@
-# Blocky World Cup — CHAL Consulting IA Edition 3.1
+# Blocky World Cup — Stadium Edition 3.2
 
 ## Lancer le jeu dans VS Code
 
@@ -31,7 +31,7 @@ Cette disposition sépare clairement les deux mains : **ZQSD à gauche pour cour
 
 ## Direction artistique
 
-La version **CHAL Consulting IA Edition 3.1** est reconstruite à partir de la dernière base complète 2.7, puis enrichie des cinématiques, du nouveau système audio et d'une véritable séquence d'éditeur. Elle adopte une ambiance de Coupe du monde destinée à un jeune joueur : couleurs lumineuses, confettis, cartes d’équipes claires, contrastes renforcés et références graphiques aux jeux de football rétro sans assombrir l’interface. Pendant le match, les supporters déploient deux grands drapeaux animés correspondant exactement aux équipes présentes sur le terrain.
+La version **Stadium Edition 3.2** est reconstruite à partir de la dernière base complète 2.7, puis enrichie des cinématiques, du nouveau système audio, d'une véritable séquence d'éditeur et d'un affichage adaptatif entièrement revu. Elle adopte une ambiance de Coupe du monde destinée à un jeune joueur : couleurs lumineuses, confettis, cartes d’équipes claires, contrastes renforcés et références graphiques aux jeux de football rétro sans assombrir l’interface. Pendant le match, les supporters déploient deux grands drapeaux animés correspondant exactement aux équipes présentes sur le terrain.
 
 ## Équipes officielles 2026
 
@@ -71,10 +71,11 @@ Les partenaires de l’équipe du joueur gardent un niveau utile même en mode D
 
 ## Adaptation aux appareils
 
-- **PC** : terrain complet, commandes clavier et interface large.
-- **Tablette** : terrain complet en paysage, joystick et boutons tactiles agrandis.
-- **Mobile paysage** : interface compacte et commandes tactiles adaptées aux pouces.
-- **Mobile portrait** : menu vertical, jaquette recomposée et caméra qui suit l’action sur le terrain.
+- **PC** : cadre 16:9 calculé à partir de la largeur et de la hauteur réellement disponibles ; aucune partie de l'image n'est coupée, même dans une fenêtre très large ou peu haute.
+- **Tablette paysage** : terrain 16:9 centré sans déformation, joystick et boutons tactiles agrandis.
+- **Tablette portrait** : interface verticale dédiée et caméra de terrain qui suit l'action.
+- **Mobile paysage** : terrain 16:9 centré, interface compacte, respect des encoches et commandes adaptées aux pouces.
+- **Mobile portrait** : jaquette recomposée, menus empilés et caméra qui suit le joueur et le ballon sans étirer le terrain.
 
 Les quatre affichages utilisent exactement le même moteur de match, les mêmes règles, la même physique du ballon et la même intelligence artificielle.
 
@@ -82,9 +83,9 @@ Les quatre affichages utilisent exactement le même moteur de match, les mêmes 
 
 Les deux photographies de l’écran d’ouverture sont normalement dans **assets**. Le jeu accepte aussi automatiquement les copies placées à la racine du dépôt GitHub. Les drapeaux détaillés sont chargés depuis FlagCDN ; un code pays reste visible si la connexion n’est pas disponible.
 
-La nouvelle ouverture **blocky-world-cup-opening.mp4** est lue avant la jaquette. Elle réunit, dans cet ordre : la vidéo officielle de CHAL CONSULTING IA, un carton bilingue **Produit et créé par / Produced and created by**, puis la cinématique Haaland/Vozinha. Une seule vidéo et un seul clic de lancement garantissent un enchaînement continu avec le son sur PC, tablette et mobile. La barre de progression et les boutons bilingues **Démarrer avec le son / Start with sound** et **Passer l’intro / Skip intro** restent disponibles. Le clic initial est volontaire : Chrome, Safari et les navigateurs mobiles interdisent le démarrage automatique d’une vidéo sonore sans action du visiteur. La touche Échap permet de passer la vidéo.
+La nouvelle ouverture **blocky-world-cup-opening.mp4** est lue avant la jaquette. Elle réunit, dans cet ordre : la vidéo officielle de CHAL CONSULTING IA, un carton bilingue **Produit et créé par / Produced and created by**, puis la cinématique Haaland/Vozinha. Une seule vidéo et un seul clic de lancement garantissent un enchaînement continu avec le son sur PC, tablette et mobile. La vidéo conserve toujours son format d'origine et s'affiche entièrement : des marges discrètes peuvent apparaître sur les écrans très larges ou verticaux afin d'éviter tout recadrage. La barre de progression et les boutons bilingues **Démarrer avec le son / Start with sound** et **Passer l’intro / Skip intro** restent disponibles. Le clic initial est volontaire : Chrome, Safari et les navigateurs mobiles interdisent le démarrage automatique d’une vidéo sonore sans action du visiteur. La touche Échap permet de passer la vidéo.
 
-Le fichier source de l’animation d’entreprise est également conservé sous le nom **chal-consulting-studio-intro.mp4**. Le logo horizontal **chal-consulting-logo.png** apparaît dans le carton d’éditeur et sur la jaquette avec la mention permanente de production.
+Le fichier source de l’animation d’entreprise est également conservé sous le nom **chal-consulting-studio-intro.mp4**. Le logo horizontal **chal-consulting-logo.png** apparaît dans le carton d’éditeur. Sur la jaquette, la signature **CHAL CONSULTING IA** reste volontairement très discrète, à la suite de la ligne légale en bas à gauche.
 
 La nouvelle musique **opening-theme.m4a** est préparée lors du clic de lancement, puis commence sur la jaquette après la cinématique. Elle reste active dans le menu et s’arrête progressivement au lancement du match. Son adresse contient un numéro de version afin d'empêcher le navigateur de rejouer l'ancienne musique conservée en cache.
 
