@@ -30,6 +30,25 @@ Le dossier peut être déposé tel quel sur Vercel ou placé à la racine d’un
 
 Cette disposition sépare clairement les deux mains : **ZQSD à gauche pour courir** et **IJKL à droite pour les actions**. Les anciennes touches E, Espace, F et C restent acceptées comme commandes secondaires. Sur PC, la fiche des touches n'est plus posée en permanence sur le terrain : le bouton **⌨** ouvre une aide centrale en mettant automatiquement le match en pause. La fermeture de la fiche relance le match. Les boutons tactiles apparaissent automatiquement sur téléphone et tablette.
 
+## Manette
+
+Le jeu se joue aussi à la manette (Xbox, PlayStation, Switch Pro… branchée en USB ou Bluetooth). Il suffit d’appuyer sur un bouton pour qu’elle soit détectée.
+
+- Stick gauche ou croix : déplacement (le stick est analogique)
+- A / ✕ : passe
+- B / ○ : tir chargé (maintenir), ou récupération près d’un adversaire
+- X / □ : tacle
+- Y / △ : sélectionner le gardien
+- LB / L1 : changer de joueur
+- RB / RT / LT : sprint
+- Start : pause
+
+Dans les menus : stick ou croix pour se déplacer, A pour valider, B pour revenir, Start pour lancer le match, LB/RB pour changer de mode. Dans la fiche d’équipe, X ou Y bascule entre Actuels et Légendes.
+
+## Actuels ou Légendes, et choix des 5 joueurs
+
+Chaque pays a son **équipe titulaire de 11 joueurs**, en deux versions : **⭐ Actuels** (joueurs en activité) et **🏆 Légendes** (joueurs retraités). Quand on choisit un pays, la fiche d’équipe s’ouvre : on choisit l’époque, puis on touche **5 joueurs** (1 gardien + 4 joueurs de champ) et on valide avec **C’est parti !**. Le bouton **👕 Mes 5** rouvre la fiche. Les effectifs sont dans **squads.js** (un astérisque marque les 5 joueurs proposés par défaut). Curaçao n’a pas encore de liste de légendes ; quelques petites sélections ont une liste de légendes plus courte que 11.
+
 ## Direction artistique
 
 La version **Ultra Legend Edition 3.5** conserve les cinématiques, le système audio, la séquence d'éditeur, le football total et l'affichage adaptatif de la version précédente. Elle adopte une ambiance de Coupe du monde destinée à un jeune joueur : couleurs lumineuses, confettis, cartes d’équipes claires, contrastes renforcés et références graphiques aux jeux de football rétro sans assombrir l’interface. Pendant le match, les supporters déploient deux grands drapeaux animés correspondant exactement aux équipes présentes sur le terrain.
