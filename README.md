@@ -47,7 +47,7 @@ Dans les menus : stick ou croix pour se déplacer, A pour valider, B pour reveni
 
 ## Actuels ou Légendes, et choix des 5 joueurs
 
-Chaque pays a son **équipe titulaire de 11 joueurs**, en deux versions : **⭐ Actuels** (joueurs en activité) et **🏆 Légendes** (joueurs retraités). Quand on choisit un pays, la fiche d’équipe s’ouvre : on choisit l’époque, puis on touche **5 joueurs** (1 gardien + 4 joueurs de champ) et on valide avec **C’est parti !**. Le bouton **👕 Mes 5** rouvre la fiche. Les effectifs sont dans **squads.js** (un astérisque marque les 5 joueurs proposés par défaut). Curaçao n’a pas encore de liste de légendes ; quelques petites sélections ont une liste de légendes plus courte que 11.
+Chaque pays a son **équipe titulaire de 11 joueurs**, en deux versions : **⭐ Actuels** (joueurs en activité) et **🏆 Légendes** (la meilleure équipe de tous les temps du pays, stars encore en activité comprises : Mbappé, Haaland, Messi…). Quand on choisit un pays, la fiche d’équipe s’ouvre : on choisit l’époque, puis on touche **5 joueurs** (1 gardien + 4 joueurs de champ) et on valide avec **C’est parti !**. Le bouton **👕 Mes 5** rouvre la fiche. Les effectifs sont dans **squads.js** (un astérisque marque les 5 joueurs proposés par défaut).
 
 ## Direction artistique
 
