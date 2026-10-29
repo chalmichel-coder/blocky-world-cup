@@ -107,5 +107,17 @@ function record(cup,homeGoals,awayGoals,pensWon){
   let next=ROUNDS[ROUNDS.indexOf(round)+1];cup.ko[next]=nextRound(cup,round);cup.stage=next;
   return{...info,kind:"ko",won};
 }
-return{create,nextMatch,record,table,bestThirds,groupOf,rating,GROUPS};
+// Classement final des 48 équipes (Coupe terminée) : 1-4 par les finales, puis par tour atteint,
+// et à tour égal par les résultats de poule.
+function ranking(cup){
+  let all=cup.groups.flatMap(g=>table(cup,g)),byName={};for(let r of all)byName[r.name]=r;
+  let loser=m=>m&&m.winner?(m.winner===m.a?m.b:m.a):null,placed=[],seen=new Set(),push=(names,round)=>{let rows=names.filter(n=>n&&!seen.has(n)).map(n=>byName[n]).sort((x,y)=>rankCompare(cup,x,y));for(let r of rows){seen.add(r.name);placed.push({name:r.name,round})}};
+  let f=cup.ko.final&&cup.ko.final[0],th=cup.ko.third&&cup.ko.third[0];
+  if(f&&f.winner){push([f.winner],"final");push([loser(f)],"final")}
+  if(th&&th.winner){push([th.winner],"third");push([loser(th)],"third")}
+  for(let r of ["qf","r16","r32"])push((cup.ko[r]||[]).map(loser),r);
+  push(all.map(r=>r.name),"group");
+  return placed.map((x,i)=>({...x,place:i+1}));
+}
+return{create,nextMatch,record,table,bestThirds,groupOf,rating,ranking,GROUPS};
 })();
