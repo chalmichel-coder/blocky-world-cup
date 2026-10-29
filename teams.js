@@ -123,3 +123,54 @@ for(const [country,name] of Object.entries(BWC_SECOND_MIDFIELDERS)){
   const roster=window.BWC_TEAM_DATA.nationalPlayers[country];
   if(roster&&!roster.MF2)roster.MF2=name;
 }
+
+// Toutes les autres nations déjà qualifiées pour une phase finale de Coupe du monde (1930-2022).
+// Les pays disparus jouent sous le nom de leur successeur : URSS → Russie, Yougoslavie → Serbie,
+// Tchécoslovaquie → Tchéquie, Zaïre → RD Congo, Indes orientales néerlandaises → Indonésie, RFA → Allemagne.
+// Format : [drapeau, maillot, short, chaussettes, liseré, code drapeau, nom anglais, GK, DF, MF, MF2, FW]
+const BWC_HISTORIC_TEAMS={
+"Angola":["🇦🇴","#d2102b","#111","#d2102b","#f7c600","ao","Angola","Hugo Marques","Clinton Mata","Fredy","Show","Gelson Dala"],
+"Bolivie":["🇧🇴","#0b8a3e","#fff","#0b8a3e","#f9e300","bo","Bolivia","Carlos Lampe","Luis Haquin","Ramiro Vaca","Héctor Cuéllar","Miguel Terceros"],
+"Bulgarie":["🇧🇬","#f4f4f4","#00966e","#f4f4f4","#d62612","bg","Bulgaria","Svetoslav Vutsov","Kristian Dimitrov","Filip Krastev","Iliya Gruev","Kiril Despodov"],
+"Cameroun":["🇨🇲","#007a5e","#ce1126","#fcd116","#fcd116","cm","Cameroon","André Onana","Jean-Charles Castelletto","André-Frank Zambo Anguissa","Carlos Baleba","Bryan Mbeumo"],
+"Chili":["🇨🇱","#d52b1e","#0039a6","#fff","#fff","cl","Chile","Gabriel Arias","Guillermo Maripán","Darío Osorio","Felipe Loyola","Alexis Sánchez"],
+"Chine":["🇨🇳","#de2910","#fff","#de2910","#ffde00","cn","China","Yan Junling","Jiang Shenglong","Xie Pengfei","Wu Xi","Wu Lei"],
+"Costa Rica":["🇨🇷","#ce1126","#002b7f","#fff","#fff","cr","Costa Rica","Patrick Sequeira","Francisco Calvo","Brandon Aguilera","Orlando Galo","Manfred Ugalde"],
+"Cuba":["🇨🇺","#cf142b","#fff","#002a8f","#fff","cu","Cuba","Sandy Sánchez","Yasmany López","Karel Espino","Luis Paradela","Onel Hernández"],
+"Danemark":["🇩🇰","#c8102e","#fff","#c8102e","#fff","dk","Denmark","Kasper Schmeichel","Joachim Andersen","Pierre-Emile Højbjerg","Christian Eriksen","Rasmus Højlund"],
+"Indonésie":["🇮🇩","#e3001b","#fff","#e3001b","#fff","id","Indonesia","Maarten Paes","Jay Idzes","Thom Haye","Ivar Jenner","Ole Romeny"],
+"Salvador":["🇸🇻","#0f47af","#fff","#0f47af","#fff","sv","El Salvador","Mario González","Roberto Domínguez","Narciso Orellana","Jairo Henríquez","Brayan Gil"],
+"Grèce":["🇬🇷","#f4f4f4","#0d5eaf","#f4f4f4","#0d5eaf","gr","Greece","Odysseas Vlachodimos","Konstantinos Mavropanos","Anastasios Bakasetas","Dimitris Pelkas","Vangelis Pavlidis"],
+"Honduras":["🇭🇳","#f4f4f4","#1f4fa3","#f4f4f4","#00bce4","hn","Honduras","Edrick Menjívar","Denil Maldonado","Kervin Arriaga","Deiby Flores","Luis Palma"],
+"Hongrie":["🇭🇺","#ce2939","#fff","#477050","#fff","hu","Hungary","Dénes Dibusz","Willi Orbán","Dominik Szoboszlai","András Schäfer","Barnabás Varga"],
+"Islande":["🇮🇸","#02529c","#fff","#02529c","#dc1e35","is","Iceland","Hákon Rafn Valdimarsson","Sverrir Ingi Ingason","Hákon Arnar Haraldsson","Ísak Bergmann Jóhannesson","Orri Steinn Óskarsson"],
+"Israël":["🇮🇱","#f4f4f4","#0038b8","#f4f4f4","#0038b8","il","Israel","Omri Glazer","Eli Dasa","Mohammad Abu Fani","Oscar Gloukh","Manor Solomon"],
+"Jamaïque":["🇯🇲","#fed100","#111","#fed100","#009b3a","jm","Jamaica","Andre Blake","Ethan Pinnock","Bobby Decordova-Reid","Kasey Palmer","Leon Bailey"],
+"Koweït":["🇰🇼","#1569b3","#fff","#1569b3","#fff","kw","Kuwait","Khaled Al-Rashidi","Fahad Awadh","Bader Al-Mutawa","Fahad Al-Ansari","Yousef Nasser"],
+"Nigeria":["🇳🇬","#008751","#fff","#008751","#fff","ng","Nigeria","Stanley Nwabali","William Troost-Ekong","Wilfred Ndidi","Alex Iwobi","Victor Osimhen"],
+"Corée du Nord":["🇰🇵","#ed1c27","#fff","#ed1c27","#024fa2","kp","North Korea","Ri Myong-guk","Jang Kuk-chol","Jong Il-gwan","Kim Kuk-bom","Han Kwang-song"],
+"Irlande du Nord":["🏴","#00843d","#fff","#00843d","#fff","gb-nir","Northern Ireland","Bailey Peacock-Farrell","Daniel Ballard","Isaac Price","Shea Charles","Dion Charles"],
+"Pérou":["🇵🇪","#f4f4f4","#f4f4f4","#f4f4f4","#d91023","pe","Peru","Pedro Gallese","Luis Advíncula","Renato Tapia","Piero Quispe","Gianluca Lapadula"],
+"Pologne":["🇵🇱","#f4f4f4","#dc143c","#f4f4f4","#dc143c","pl","Poland","Łukasz Skorupski","Jan Bednarek","Piotr Zieliński","Sebastian Szymański","Robert Lewandowski"],
+"Irlande":["🇮🇪","#169b62","#fff","#169b62","#ff883e","ie","Republic of Ireland","Caoimhín Kelleher","Nathan Collins","Josh Cullen","Jason Knight","Evan Ferguson"],
+"Roumanie":["🇷🇴","#fcd116","#002b7f","#fcd116","#ce1126","ro","Romania","Florin Niță","Radu Drăgușin","Nicolae Stanciu","Răzvan Marin","Denis Drăguș"],
+"Russie":["🇷🇺","#f4f4f4","#0039a6","#d52b1e","#d52b1e","ru","Russia","Matvey Safonov","Igor Diveev","Daler Kuzyaev","Aleksei Miranchuk","Fyodor Chalov"],
+"Serbie":["🇷🇸","#c6363c","#0c4076","#f4f4f4","#f4f4f4","rs","Serbia","Predrag Rajković","Strahinja Pavlović","Sergej Milinković-Savić","Saša Lukić","Dušan Vlahović"],
+"Slovaquie":["🇸🇰","#f4f4f4","#0b4ea2","#f4f4f4","#ee1c25","sk","Slovakia","Martin Dúbravka","Milan Škriniar","Stanislav Lobotka","Ondrej Duda","David Strelec"],
+"Slovénie":["🇸🇮","#f4f4f4","#0067b1","#f4f4f4","#38a935","si","Slovenia","Jan Oblak","Jaka Bijol","Adam Gnezda Čerin","Timi Max Elšnik","Benjamin Šeško"],
+"Togo":["🇹🇬","#ffce00","#006a4e","#ffce00","#d21034","tg","Togo","Malcolm Barcola","Djené Dakonam","Roger Aholou","Thibault Klidjé","Kévin Denkey"],
+"Trinité-et-Tobago":["🇹🇹","#ce1126","#111","#ce1126","#fff","tt","Trinidad and Tobago","Marvin Phillip","Aubrey David","Kevin Molino","Andre Rampersad","Levi García"],
+"Ukraine":["🇺🇦","#ffd500","#005bbb","#ffd500","#005bbb","ua","Ukraine","Anatoliy Trubin","Illia Zabarnyi","Oleksandr Zinchenko","Heorhiy Sudakov","Artem Dovbyk"],
+"Émirats arabes unis":["🇦🇪","#f4f4f4","#00732f","#f4f4f4","#ff0000","ae","United Arab Emirates","Khalid Eisa","Khalifa Al Hammadi","Abdullah Ramadan","Harib Abdalla","Fábio Lima"],
+"Pays de Galles":["🏴","#c8102e","#fff","#c8102e","#00b140","gb-wls","Wales","Danny Ward","Ben Davies","Ethan Ampadu","Harry Wilson","Brennan Johnson"]
+};
+for(const [country,d] of Object.entries(BWC_HISTORIC_TEAMS)){
+  const data=window.BWC_TEAM_DATA;
+  data.countries[country]=d.slice(0,5);
+  data.countryCodes[country]=d[5];
+  data.countryEnglish[country]=d[6];
+  data.nationalPlayers[country]={GK:d[7],DF:d[8],MF:d[9],MF2:d[10],FW:d[11]};
+}
+
+// Étoiles = Coupes du monde gagnées (Espagne championne 2026 face à l'Argentine).
+window.BWC_TEAM_DATA.worldCups={"Brésil":5,"Allemagne":4,"Italie":4,"Argentine":3,"France":2,"Uruguay":2,"Espagne":2,"Angleterre":1};
